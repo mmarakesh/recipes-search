@@ -1,38 +1,91 @@
+body {
+    background-color: #FFFBC1;
+}
 .App {
-  text-align: center;
+    margin-left: 150px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+video {
+    object-fit: cover;
+    width: 900px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.videoBox {
+    display: flex;
+    justify-content: right;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form {
+   padding: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    padding: 10px;
+    background-color: #B6E2A1;
+    border: none;
+    font-family: 'Raleway', sans-serif;
 }
+img {
+    border: solid 5px #FEBE8C;
+}
+h1, h2, p, li {
+    font-family: 'Raleway', sans-serif;
+}
+ul {
+    margin-bottom: 50px;
+    max-width: 300px;
+}
+@media all and (max-width: 1300px) {
+    .App {
+        margin-left: 50px;
+    }
+    img {
+        width: 250px;
+    }
+    video {
+        width: 800px;
+    }
+    h2 {
+        max-width: 300px;
+    }
+}
+@media all and (max-width: 1100px) {
+    video {
+        width: 400px;
+    }
+    h2 {
+        max-width: 300px;
+    }
+}
+@media all and (max-width: 800px) {
+    video {
+        display: none;
+    }
+    h2 {
+        max-width: 300px;
+    }
+}
+@media all and (max-width: 500px) {
+    video {
+        display: none;
+    }
+    .App {
+        margin-left: 50px;
+    }
+    img {
+        width: 200px;
+    }
+    input {
+        width: 150px;
+    }
+    ul {
+        max-width: 200px;
+    }
+}
+    
